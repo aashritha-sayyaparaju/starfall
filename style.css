@@ -86,3 +86,55 @@ body {
   opacity: 0.7;
   margin-bottom: 8px;
 }
+
+#title {
+  font-family: 'Lora', serif;
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: -1px;
+  text-shadow: 0 0 60px rgba(196,181,253,0.4);
+}
+ 
+#start-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+ 
+.menu-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 12px 48px;
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  background: var(--glass);
+  color: var(--cream);
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(8px);
+  min-width: 200px;
+}
+ 
+.menu-btn:hover {
+  background: rgba(196, 181, 253, 0.15);
+  border-color: var(--lilac);
+  color: var(--lilac);
+}
+ 
+.menu-btn.secondary {
+  opacity: 0.5;
+}
+ 
+.menu-btn.secondary:hover {
+  opacity: 1;
+}
+ 
+.menu-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+ 
