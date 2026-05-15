@@ -1,0 +1,24 @@
+:root {
+  --night: #0d0d1a;
+  --deep: #12122a;
+  --purple: #2a1f5e;
+  --lilac: #c4b5fd;
+  --pink: #f9a8d4;
+  --gold: #fde68a;
+  --cream: #fef9f0;
+  --text: #e8e0f0;
+  --muted: #9d8fb0;
+  --glass: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.1);
+}
+ 
+* { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--night);
+  color: var(--text);
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}
