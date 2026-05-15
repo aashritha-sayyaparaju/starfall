@@ -24,3 +24,41 @@
       <p id="start-hint">a story about a chance encounter on a rooftop</p>
     </div>
   </div>
+
+  <div id="screen-game" class="screen">
+ 
+    <div id="bg-layer"></div>
+ 
+    <div id="char-layer">
+      <div id="char-left" class="character hidden"></div>
+      <div id="char-right" class="character hidden"></div>
+    </div>
+ 
+    <div id="history-panel" class="hidden">
+      <div id="history-header">
+        <span>dialogue history</span>
+        <button id="btn-close-history">✕</button>
+      </div>
+      <div id="history-list"></div>
+    </div>
+ 
+    <div id="ui-layer">
+ 
+      <div id="top-bar">
+        <button class="ui-btn" id="btn-history">log</button>
+        <button class="ui-btn" id="btn-save">save</button>
+        <button class="ui-btn" id="btn-menu-game">menu</button>
+      </div>
+ 
+      <div id="dialogue-box">
+        <div id="speaker-name"></div>
+        <div id="dialogue-text"></div>
+        <div id="click-indicator">▾</div>
+      </div>
+ 
+      <div id="choices-box" class="hidden">
+        <div id="choices-list"></div>
+      </div>
+ 
+    </div>
+  </div>
