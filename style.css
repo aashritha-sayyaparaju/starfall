@@ -138,3 +138,49 @@ body {
   cursor: not-allowed;
 }
  
+.menu-btn:disabled:hover {
+  background: var(--glass);
+  border-color: var(--glass-border);
+  color: var(--cream);
+}
+ 
+#start-hint {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+}
+ 
+
+#bg-layer {
+  position: absolute;
+  inset: 0;
+  transition: background 1s ease;
+}
+ 
+
+#bg-layer.bg-rooftop {
+  background:
+    linear-gradient(to bottom, #050510 0%, #0d0d2a 40%, #1a1040 60%, #2d1b1b 100%);
+}
+ 
+#bg-layer.bg-rooftop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 15% 20%, white 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 15%, white 0%, transparent 100%),
+    radial-gradient(1px 1px at 40% 25%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 85% 35%, white 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 10%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 30%, white 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 8%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 18%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 20% 40%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 5%, white 0%, transparent 100%);
+}
+ 
+#bg-layer.bg-cafe {
+  background: linear-gradient(to bottom, #1a0f0a 0%, #2d1a0e 50%, #1f1208 100%);
+}
+ 
