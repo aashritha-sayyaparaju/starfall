@@ -383,3 +383,65 @@ body {
   min-height: 20px;
 }
  
+#dialogue-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  font-weight: 300;
+}
+ 
+#click-indicator {
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  animation: bob 1.2s ease-in-out infinite;
+}
+ 
+#click-indicator.hidden {
+  display: none;
+}
+ 
+@keyframes bob {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(4px); opacity: 1; }
+}
+ 
+/* choices */
+#choices-box {
+  margin: 0 48px 48px;
+  pointer-events: all;
+}
+ 
+#choices-box.hidden {
+  display: none;
+}
+ 
+#choices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+.choice-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 14px 24px;
+  background: rgba(8, 6, 20, 0.8);
+  border: 1px solid var(--glass-border);
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: all 0.2s;
+}
+ 
+.choice-btn:hover {
+  background: rgba(196, 181, 253, 0.1);
+  border-color: var(--lilac);
+  color: var(--lilac);
+  transform: translateX(4px);
+}
