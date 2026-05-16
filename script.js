@@ -150,4 +150,108 @@ const SCRIPT = {
     charLeft: null,
     charRight: "mira",
     next: "s11"
-  }
+  },
+  s11: {
+    id: "s11",
+    speaker: "Mira",
+    text: "\"I'm Mira, by the way.\"",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s12"
+  },
+  s12: {
+    id: "s12",
+    speaker: null,
+    text: "You tell her your name.",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s13"
+  },
+  s13: {
+    id: "s13",
+    speaker: "Mira",
+    text: "\"Nice to meet you.\" She looks back up at the sky. \"Terrible night for stargazing, honestly.\"",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s14"
+  },
+  s14: {
+    id: "s14",
+    speaker: null,
+    text: "You can just barely make out Orion through the haze. She's right.",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s15"
+  },
+  s15: {
+    id: "s15",
+    speaker: "Mira",
+    text: "\"Do you ever wonder if there's a version of this city where you can actually see the Milky Way?\"",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s16"
+  },
+  s16: {
+    id: "s16",
+    speaker: null,
+    text: "What do you think?",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    choices: [
+      { text: "\"I think I'd move there immediately.\"", next: "s17a", setFlag: "romantic" },
+      { text: "\"The city has other things going for it.\"", next: "s17b" },
+      { text: "\"I try not to think about what I can't have.\"", next: "s17c", setFlag: "guarded" }
+    ]
+  },
+  s17a: {
+    id: "s17a",
+    speaker: "Mira",
+    text: "She laughs — a real one. \"Right? I looked up dark sky preserves once and then spent an hour planning a trip I never took.\"",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s18"
+  },
+  s17b: {
+    id: "s17b",
+    speaker: "Mira",
+    text: "\"Fair point.\" She tilts her head. \"I still think about it though. The trade-off feels wrong sometimes.\"",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s18"
+  },
+  s17c: {
+    id: "s17c",
+    speaker: "Mira",
+    text: "She's quiet for a moment. \"That's... probably healthier than me, honestly.\"",
+    bg: "rooftop",
+    charLeft: null,
+    charRight: "mira",
+    next: "s18"
+  },
+  s18: {
+    id: "s18",
+    speaker: null,
+    text: "The door opens again. A guy comes out, stopping when he sees the two of you.",
+    bg: "rooftop",
+    charLeft: "kai",
+    charRight: "mira",
+    next: "s19"
+  },
+  s19: {
+    id: "s19",
+    speaker: "Kai",
+    text: "\"Oh good, you found someone sane to talk to.\" He says this to Mira.",
+    bg: "rooftop",
+    charLeft: "kai",
+    charRight: "mira",
+    dim: "right",
+    next: "s20"
+  },
