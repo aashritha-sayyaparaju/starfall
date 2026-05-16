@@ -250,3 +250,68 @@ body {
   border-radius: 35px 35px 10px 10px;
 }
  
+.character.mira .char-head {
+  position: absolute;
+  bottom: 185px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 80px;
+  background: #f5c8a8;
+  border-radius: 50% 50% 45% 45%;
+}
+ 
+.character.mira .char-hair {
+  position: absolute;
+  bottom: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84px;
+  height: 70px;
+  background: #3d1f0a;
+  border-radius: 50% 50% 20% 20%;
+}
+ 
+.character.mira .char-hair::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -8px;
+  width: 20px;
+  height: 60px;
+  background: #3d1f0a;
+  border-radius: 0 0 10px 10px;
+}
+ 
+.character.kai .char-body {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 210px;
+  background: linear-gradient(to bottom, #2a3d5e, #1a2a4a);
+  border-radius: 35px 35px 10px 10px;
+}
+ 
+.character.kai .char-head {
+  position: absolute;
+  bottom: 195px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 78px;
+  background: #d4a882;
+  border-radius: 50% 50% 45% 45%;
+}
+ 
+.character.kai .char-hair {
+  position: absolute;
+  bottom: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 50px;
+  background: #1a1008;
+  border-radius: 50% 50% 0 0;
+}
