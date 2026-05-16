@@ -315,3 +315,71 @@ body {
   background: #1a1008;
   border-radius: 50% 50% 0 0;
 }
+
+#ui-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+ 
+#top-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  pointer-events: all;
+}
+ 
+.ui-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 3px;
+  color: var(--muted);
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.15s;
+  pointer-events: all;
+}
+ 
+.ui-btn:hover {
+  color: var(--cream);
+  border-color: rgba(255,255,255,0.2);
+}
+ 
+#dialogue-box {
+  margin: 0 48px 48px;
+  padding: 28px 36px;
+  background: rgba(8, 6, 20, 0.85);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  backdrop-filter: blur(16px);
+  min-height: 140px;
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+  transition: opacity 0.3s;
+}
+ 
+#dialogue-box:hover {
+  border-color: rgba(196,181,253,0.2);
+}
+ 
+#speaker-name {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--lilac);
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+ 
