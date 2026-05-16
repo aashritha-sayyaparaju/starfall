@@ -255,3 +255,127 @@ const SCRIPT = {
     dim: "right",
     next: "s20"
   },
+  s20: {
+    id: "s20",
+    speaker: "Mira",
+    text: "\"Kai. I've been up here for ten minutes.\"",
+    bg: "rooftop",
+    charLeft: "kai", charRight: "mira",
+    dim: "left",
+    next: "s21"
+  },
+  s21: {
+    id: "s21",
+    speaker: "Kai",
+    text: "\"And I've been in the kitchen arguing with myself about cold noodles. So technically I've had a longer night.\" He sits down.",
+    bg: "rooftop",
+    charLeft: "kai", charRight: "mira",
+    next: "s22"
+  },
+  s22: {
+    id: "s22",
+    speaker: "Kai",
+    text: "\"Can I ask you something weird?\" He doesn't wait. \"Do you think people are mostly good or mostly just scared?\"",
+    bg: "rooftop",
+    charLeft: "kai", charRight: "mira",
+    dim: "right",
+    choices: [
+      { text: "\"Mostly scared. Same thing, maybe.\"", next: "s23a" },
+      { text: "\"Good. People just have bad days.\"", next: "s23b" },
+      { text: "\"I don't think it's that simple.\"", next: "s23c" }
+    ]
+  },
+  s23a: {
+    id: "s23a",
+    speaker: "Kai",
+    text: "\"Huh.\" He looks at Mira. \"I like this one.\"",
+    bg: "rooftop",
+    charLeft: "kai", charRight: "mira",
+    dim: "right",
+    next: "s24"
+  },
+  s23b: {
+    id: "s23b",
+    speaker: "Mira",
+    text: "She smiles. \"That's a nice way to think about it.\"",
+    bg: "rooftop",
+    charLeft: "kai", charRight: "mira",
+    dim: "left",
+    next: "s24"
+  },
+  s23c: {
+    id: "s23c",
+    speaker: "Kai",
+    text: "\"Yeah, you're probably right.\" He leans back. \"I just like asking.\"",
+    bg: "rooftop",
+    charLeft: "kai", charRight: "mira",
+    dim: "right",
+    next: "s24"
+  },
+  s24: {
+    id: "s24",
+    speaker: "Kai",
+    text: "\"I have work at eight. This was a terrible idea and I regret nothing.\" He disappears through the door.",
+    bg: "rooftop",
+    charLeft: null, charRight: "mira",
+    next: "s25"
+  },
+  s25: {
+    id: "s25",
+    speaker: "Mira",
+    text: "\"I should probably go too.\" She doesn't move.",
+    bg: "rooftop",
+    charLeft: null, charRight: "mira",
+    next: "s26"
+  },
+  s26: {
+    id: "s26",
+    speaker: null,
+    text: "What do you say?",
+    bg: "rooftop",
+    charLeft: null, charRight: "mira",
+    choices: [
+      { text: "\"Five more minutes.\"", next: "end_good", setFlag: "stayed" },
+      { text: "\"Yeah, it's late. Goodnight.\"", next: "end_neutral" },
+      { text: "Say nothing. Just look back up at the sky.", next: "end_quiet" }
+    ]
+  },
+
+  end_good: {
+    id: "end_good",
+    speaker: "Mira",
+    text: "She smiles and pulls the blanket tighter. \"Five minutes,\" she agrees.",
+    bg: "dawn",
+    charLeft: null, charRight: "mira",
+    next: "_end_good"
+  },
+  end_neutral: {
+    id: "end_neutral",
+    speaker: "Mira",
+    text: "\"Goodnight.\" At the door she pauses. \"Same time tomorrow?\" She's half-joking. Maybe.",
+    bg: "rooftop",
+    charLeft: null, charRight: "mira",
+    next: "_end_neutral"
+  },
+  end_quiet: {
+    id: "end_quiet",
+    speaker: null,
+    text: "She follows your gaze upward. Neither of you moves. The city keeps humming below.",
+    bg: "rooftop",
+    charLeft: null, charRight: "mira",
+    next: "_end_quiet"
+  },
+
+  _end_good: {
+    id: "_end_good",
+    end: { title: "five more minutes", desc: "Some nights stretch on longer than they should. You decide this is one of the good ones." }
+  },
+  _end_neutral: {
+    id: "_end_neutral",
+    end: { title: "same time tomorrow", desc: "You don't know if she meant it. You find yourself hoping she did." }
+  },
+  _end_quiet: {
+    id: "_end_quiet",
+    end: { title: "starfall", desc: "No words. Just the sky, the city, and two people who needed the same thing tonight." }
+  }
+};
